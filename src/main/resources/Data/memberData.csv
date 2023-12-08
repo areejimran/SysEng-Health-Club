@@ -1,0 +1,7 @@
+Mem Id,First Name,Last Name,DOB(yyyy-MM-dd),Age,Email ID,Mobile Number, membershipLevel, Membership Status, Visits
+10000001,syed,shahrukh,1996-12-12,26,Syed@gmail.com,3128668048,Green,Cancelled,2
+10000003,alok,ranjan,1996-12-12,26,syed,123340440,Purple,Cancelled,0
+10000004,saranya,dasari,2001-09-05,22,saranay@gmail.com,2246590705,Green,Cancelled,4
+10000005,sanmeet,singh,1996-12-12,27,sanmeet@gmail.com,9999999999,Blue,Activated,5
+10000006,John,Doe,1990-01-01,33,john@example.com,1234567890,Purple,Activated,0
+10000007,John,Doe,1990-01-01,33,john@example.com,1234567891,Purple,Activated,0

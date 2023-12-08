@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="lastNam" prefHeight="736.0" prefWidth="815.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.sysEng.Controller">
+   <children>
+      <Label layoutX="33.0" layoutY="40.0" text="SysEng Club">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="292.0" layoutY="78.0" text="New Member Registration" textFill="#ec5b01">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeComment" layoutX="236.0" layoutY="32.0" textFill="#a61616">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="353.0" layoutY="134.0" text="Please fill the form" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstNameID" layoutX="56.0" layoutY="227.0" prefHeight="31.0" prefWidth="250.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="56.0" layoutY="199.0" text="1. First Name ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="199.0" text="2. Last Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="337.0" prefHeight="18.0" prefWidth="225.0" text="3. Date of birth (yyyy-MM-dd)">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="486.0" layoutY="338.0" prefHeight="18.0" prefWidth="214.0" text="4. Email ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="466.0" prefHeight="18.0" prefWidth="138.0" text="5. Mobile Number">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastNameID" layoutX="487.0" layoutY="227.0" prefHeight="31.0" prefWidth="250.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="DobID" layoutX="56.0" layoutY="367.0" prefHeight="30.0" prefWidth="250.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailID" layoutX="487.0" layoutY="367.0" prefHeight="26.0" prefWidth="250.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="mobileNumberID" layoutX="59.0" layoutY="497.0" prefHeight="22.0" prefWidth="250.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="registrationSubmitID" layoutX="367.0" layoutY="569.0" mnemonicParsing="false" onAction="#memberRegistrationSubmit" text="Submit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="144.0" layoutY="201.0" text="*" textFill="RED" />
+      <Label layoutX="255.0" layoutY="331.0" text="*" textFill="RED" />
+      <Label layoutX="562.0" layoutY="338.0" prefHeight="18.0" prefWidth="18.0" text="*" textFill="RED" />
+      <Label layoutX="178.0" layoutY="468.0" text="*" textFill="RED" />
+      <Label layoutX="572.0" layoutY="201.0" text="*" textFill="RED" />
+      <ComboBox fx:id="membershipLevelID" layoutX="487.0" layoutY="506.0" onAction="#SelectLevel" prefHeight="31.0" prefWidth="250.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Green" />
+               <String fx:value="Purple" />
+               <String fx:value="Blue" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+
+      <Label layoutX="487.0" layoutY="466.0" text="6. Membership Level">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="624.0" layoutY="467.0" prefHeight="18.0" prefWidth="18.0" text="*" textFill="RED" />
+      <Label fx:id="registrationSuccess" layoutX="33.0" layoutY="640.0" prefHeight="38.0" prefWidth="394.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="membershipID" layoutX="446.0" layoutY="639.0" prefHeight="40.0" prefWidth="331.0" textFill="#ea2700">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="errorMessage" layoutX="243.0" layoutY="154.0" prefHeight="46.0" prefWidth="434.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
